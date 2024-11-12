@@ -1,0 +1,43 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R est un logiciel libre livré sans AUCUNE GARANTIE.
+Vous pouvez le redistribuer sous certaines conditions.
+Tapez 'license()' ou 'licence()' pour plus de détails.
+
+R est un projet collaboratif avec de nombreux contributeurs.
+Tapez 'contributors()' pour plus d'information et
+'citation()' pour la façon de le citer dans les publications.
+
+Tapez 'demo()' pour des démonstrations, 'help()' pour l'aide
+en ligne ou 'help.start()' pour obtenir l'aide au format HTML.
+Tapez 'q()' pour quitter R.
+
+[Sauvegarde de la session précédente restaurée]
+
+> modelname1 = "Hybrid.res"
+> data1 = read.table(modelname1)
+> attach(data1);
+> 
+> Experience = V1
+> Lambda1 = V2
+> Lambda2 = V3
+> Lambda3 = V4
+> Lambda4 = V5
+> Lambda5 = V6
+> Lambda6 = V7
+> Lambda7 = V8
+> Number = V9
+> Time = V10
+> Loss = V11
+> 
+> 
+> barplot(Number, names.arg=Experience ,xlab = "Experiment", ylim=c(0,45), ylab="Mean Number of DPs in the EPN",border="red",col="blue", density=14)
+> barplot(Time, names.arg=Experience ,xlab = "Experiment", ylim=c(0,1.5), ylab="Mean waiting time of a DP in the EPN",border="red",col="blue", density=14)
+> barplot(Loss, names.arg=Experience ,xlab = "Experiment", ylim=c(0,35), ylab="Loss rate of EPs in the EPN", border="red",col="blue", density=14)
+> 
+> proc.time()
+utilisateur     système      écoulé 
+      0.320       0.016       0.326 

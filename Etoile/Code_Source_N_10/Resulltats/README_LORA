@@ -1,0 +1,29 @@
+
+-----------------Paramétres----------------------------
+
+Topologie d'etoile (LORA) avec N = 10 cellules et K = 4 Cox phases 
+Les feuilles : 1,2,3,4,5,6,7,8,9  
+Le noeud centrale : 10    
+Les noeuds qui recoivent les DPs  : 1,2,3,4,5,6,7,8,9   
+Nombre de panneau a affecter : 40 ( doit etre dans [26, 57], mais pas de problème si ça depasse 57, on renvoie directe la solution de 57 :))
+
+
+Lambda[N] = {1,1,1,2,2,2,3,3,3,0}; 
+Gama[N] = {4,4,4,4,4,4,4,4,4,2}; (Leakage rate dans chaque cellule), valeur choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Alpha = 2 (Puissance d'un panneau)
+Mu_i = 40    // Valeur choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Mu_10 = 100  // Le noeud centrale est supposé étre 2.5 fois plus rapide (avec moin de Leakage) que les autres noeuds.
+			 // Vue qe ce dernier recoit tout le traffic du réseau. 
+
+Matrice de routage ;
+
+				P(i,j) =	{{ 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},   
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},   
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+							 { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},      
+						     { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+						     { 0,    0,    0,    0,    0,    0,    0,    0,    0,    1},  
+						     { 0.01,   0.01,    0.01,    0.01,    0.01,    0.01,    0.01,    0.01,    0.01,    0} };  

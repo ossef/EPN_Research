@@ -1,0 +1,17 @@
+
+
+-----------------Paramétres----------------------------
+ 
+Topologie d'Arbre avec N = 7 cellules et K = 4 Erlang phases  
+Les feuilles : 1,2,3,4   
+Les noeuds internes : 5,6   
+La racine  : 7  
+Les noeuds qui recoivent les DPs  : 1,2,3,4  
+Nombre de panneau à affecter : 41  (doit être dans [20,42], mais pas de problème si ça depasse 42, on renvoie directe la solution de 42 )
+
+
+Lambda[N] = {1,2,3,4,0,0,0};  
+Mu_i = 50 (identique dans chaque cellule), valeurs choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Gamma_i = 5 (Leakage rate dans chaque cellule), valeur choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Alpha = 2 (Puissance d'un panneau)
+

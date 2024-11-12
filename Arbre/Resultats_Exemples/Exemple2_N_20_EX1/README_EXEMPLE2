@@ -1,0 +1,17 @@
+
+
+-----------------Paramétres----------------------------
+
+Topologie d'Arbre avec N = 20 cellules et K = 4 Erlang phases  
+Les feuilles : 1,2,3,4,5,6,7,8,9   
+Les noeuds internes : 10,11,12,13,14,15,16,17,18,19   
+La racine  : 20   
+Les noeuds qui recoivent les DPs  : 1,2,3,4,5,6,7,8,9,10,18   
+Nombre de panneau a affecter : 90 ( doit etre dans [53, 240], mais pas de problème si ça depasse 240, on renvoie directe la solution de 240 )
+
+
+Lambda[N] = {1,1,1,1,2,2,3,3,3,1,0,0,0,0,0,0,0,1,0,0};  
+Mu_i = 85 (identique dans chaque cellule), valeur choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Gamma_i = 15 (Leakage rate dans chaque cellule), valeur choisi pour des raison d'existence de solutions dans le dommaine de definition.
+Alpha = 2 (Puissance d'un panneau)
+  

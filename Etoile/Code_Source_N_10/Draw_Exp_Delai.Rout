@@ -1,0 +1,34 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R est un logiciel libre livré sans AUCUNE GARANTIE.
+Vous pouvez le redistribuer sous certaines conditions.
+Tapez 'license()' ou 'licence()' pour plus de détails.
+
+R est un projet collaboratif avec de nombreux contributeurs.
+Tapez 'contributors()' pour plus d'information et
+'citation()' pour la façon de le citer dans les publications.
+
+Tapez 'demo()' pour des démonstrations, 'help()' pour l'aide
+en ligne ou 'help.start()' pour obtenir l'aide au format HTML.
+Tapez 'q()' pour quitter R.
+
+[Sauvegarde de la session précédente restaurée]
+
+> 
+> modelname1 = "Test.res"
+> data1 = read.table(modelname1)
+> attach(data1);
+> 
+> Experience = V1
+> delay = V11
+> 
+> 
+> 
+> barplot(delay, names.arg=Experience ,ylim =c(0,5),xlab = "Different configurations with 30 panels", ylab="Mean waiting time of a DP in the EPN",border="red",col="blue", density=14)
+> 
+> proc.time()
+utilisateur     système      écoulé 
+      0.352       0.016       0.449 
