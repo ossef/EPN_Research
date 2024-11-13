@@ -13,4 +13,4 @@ show how to optimize such a system in Star topology [1] and Tree tolopology [2].
 
 [1] "Energy Packet Networks with general service time distribution", Youssef AIT EL MAHJOUB, Hind CASTEL-TALEB and Jean-Michel FOURNEAU". In, 28th International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems, MASCOTS, 2021.
 
-[2] "Evaluation de performances pour réseaux IT économes en énergie", Youssef AIT EL MAHJOUB and Jean-Michel FOURNEAU". In Phd-thesis, Chapter 8. https://theses.fr/2021UPASG011
+[2] "Performance evaluation of Green IT networks", Youssef AIT EL MAHJOUB. In Phd-thesis, Chapter 8. https://theses.fr/2021UPASG011
